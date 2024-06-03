@@ -1,0 +1,6 @@
+/* ヘッダ画像をトリミング */
+@media (max-width: 768px) {
+  .img-cropping {
+    object-view-box: inset(10px 300px 0 0);
+  }
+}

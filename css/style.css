@@ -1,3 +1,43 @@
-div {
-  border: 1px solid white;
+/* アプリケーションのテーマ色 */
+:root {
+  --theme-color: rgb(4, 4, 47);
+  --button-bg-color: rgb(221, 194, 140);
+  --button-color: rgb(255, 255, 255);
+  --link-color: rgb(35, 145, 51);
+  --subhead-color: rgb(0, 51, 102);
+}
+
+/* テーブル形の項目スタイル */
+.bg-title {
+  background-color: var(--theme-color);
+}
+.text-title {
+  color: white;
+}
+
+/* 小見出し・強調色 */
+.text-subhead {
+  color: var(--subhead-color);
+}
+
+/* ボタンの標準スタイル */
+.btn-scs {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--button-bg-color);
+  --bs-btn-border-color: var(--button-bg-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: color-mix(in srgb, var(--button-bg-color) 75%, white);
+  --bs-btn-hover-border-color: color-mix(
+    in srgb,
+    var(--button-color) 100%,
+    white
+  );
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: color-mix(in srgb, var(--button-bg-color) 50%, white);
+  --bs-btn-active-border-color: var(--button-bg-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--button-bg-color);
+  --bs-btn-disabled-border-color: var(--button-bg-color);
 }

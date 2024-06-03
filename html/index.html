@@ -8,17 +8,47 @@
     <script src="/bootstrap-source/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="bg-black bg-opacity-75 text-white">
-    <div class="row">
-      <div class="col-2 p-0"><!-- spacer --></div>
-      <div class="col-8 p-0">
-        <header class="container-fluid">
-          <img src="/img/header.png" alt="ヘッダー" />
-        </header>
-        <main></main>
-        <footer></footer>
+  <body class="">
+    <!-- 全体の余白はコンテナ要素のpaddingを使用。 -->
+    <main class="container py-lg-2">
+      <!-- 項目一つ毎に一つの行として作成 -->
+      <div class="container border border-1 border-black">
+        <div class="row">
+          <!-- タイトル部分 -->
+          <div class="col bg-title text-title p-2">
+            <h2>新着情報</h2>
+          </div>
+        </div>
+
+        <div class="row p-4">
+          <!-- 内容部分。新着情報の数だけrowを内包する -->
+
+          <div class="row mb-4">
+            <!-- 1件の新着情報 -->
+            <div class="col-4">2024年4月9日</div>
+            <div class="col">申込み受付期間は終了しました。</div>
+          </div>
+
+          <div class="row mb-4">
+            <!-- 1件の新着情報 -->
+            <div class="col-4">2024年4月9日</div>
+            <div class="col">
+              受験票ダウンロード期間は
+              <!-- 日付部分は途中で改行させない -->
+              <mark class="text-nowrap bg-body"> 4月30日（火）13時00分</mark>
+              から
+              <mark class="text-nowrap bg-body">5月10日（金）17時00分</mark
+              >までです。
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-2 p-0"></div><!-- spacer --></div>
-    </div>
+    </main>
+
+    <footer class="container text-center">
+      <button type="button" class="btn btn-scs btn-lg rounded-0 fs-2 fw-bold">
+        マイページログイン
+      </button>
+    </footer>
   </body>
 </html>
